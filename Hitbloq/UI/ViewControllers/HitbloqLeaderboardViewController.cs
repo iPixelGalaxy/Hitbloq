@@ -159,9 +159,7 @@ namespace Hitbloq.UI.ViewControllers
 
 						if (_infoButtons != null)
 						{
-							_infoButtons[i].gameObject.SetActive(true);
-							var hoverHint = _infoButtons[i].GetComponent<HoverHint>();
-							hoverHint.text = $"Score Set: {leaderboardEntries[i].DateSet}";
+                            _infoButtons[i].gameObject.SetActive(true);
 						}
 
 						if (leaderboardEntries[i].UserID == id)
@@ -248,7 +246,7 @@ namespace Hitbloq.UI.ViewControllers
 			}
 		}
 
-		[UIAction("up-clicked")]
+        [UIAction("up-clicked")]
 		private void UpClicked()
 		{
 			if (UpEnabled)
@@ -297,6 +295,7 @@ namespace Hitbloq.UI.ViewControllers
 
 		[UIComponent("button10")]
 		private readonly Button? _button10 = null!;
+        
 
 		#endregion
 
